@@ -21,7 +21,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("Grizzly with Jersey and Jackson");
+			System.out.println("Grizzly with Jersey and Jackson using Gradle/Git");
 
 			final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, createApp(), false);
 			Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
