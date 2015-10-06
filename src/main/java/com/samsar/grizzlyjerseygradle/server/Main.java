@@ -17,7 +17,7 @@ import org.glassfish.grizzly.http.server.HttpServer;
  */
 public class Main {
 
-	private static final URI BASE_URI = URI.create("http://localhost:9999/");
+	private static final URI BASE_URI = URI.create("http://0,0.0.0:80/");
 
 	public static void main(String[] args) {
 		try {
@@ -32,6 +32,7 @@ public class Main {
 			}));
 			server.start();
 
+			System.out.println(BASE_URI.toString());
 			System.out.println(String.format("Application started.%nStop the application using CTRL+C"));
 
 			Thread.currentThread().join();
